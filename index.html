@@ -858,7 +858,7 @@ code { font-family: ui-monospace, Menlo, monospace; font-size: .88em; background
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
-      <a href="#fit">공고 대응</a>
+      <a href="#highlights">하이라이트</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -890,7 +890,7 @@ code { font-family: ui-monospace, Menlo, monospace; font-size: .88em; background
       </div>
       <div class="hero-cta">
         <a class="pill pill-solid" href="#projects">프로젝트 보기</a>
-        <a class="pill" href="#fit">공고 요구사항 대응</a>
+        <a class="pill" href="#highlights">만든 것 하이라이트</a>
       </div>
     </div>
 
@@ -975,22 +975,20 @@ code { font-family: ui-monospace, Menlo, monospace; font-size: .88em; background
     </section>
 
 
-    <!-- FIT -->
-    <section class="block-card block-wide" id="fit" data-scene="home">
+    <!-- HIGHLIGHTS -->
+    <section class="block-card block-wide" id="highlights" data-scene="home">
       <div class="block-head">
-        <span class="block-kicker">POSITION FIT</span>
-        <h2>공고 요구사항과 제 경험</h2>
-        <p>여동생 운전 가르치기 Unity 클라이언트 개발자 공고의 담당업무와 자격 항목에 맞춰, 있는 것과 없는 것을 구분해서 적었습니다.</p>
+        <span class="block-kicker">HIGHLIGHTS</span>
+        <h2>이런 걸 직접 만들었습니다</h2>
+        <p>스테이지 구성, 판정, 연출, 툴에서 구현한 장면들입니다. 눌러서 코드와 이유를 볼 수 있습니다.</p>
       </div>
-      <h3 style="font-size:17px;margin:4px 0 0">담당 업무</h3>
-<div class="dtable-wrap"><table class="dtable"><thead><tr><th>공고 담당 업무</th><th>제 경험</th></tr></thead><tbody><tr><td class="dname">핵심 루프와 인게임 시스템(물리, 조작, UI)<br><span class="fit-tag have">있음</span></td><td class="ddesc">준비와 전투가 반복되는 핵심 루프(작은 왕국), 소울라이크 조작과 전투 시스템(라스트 글래디에이터), UGUI 화면을 직접 구현했습니다.</td></tr><tr><td class="dname">스테이지 제작과 오브젝트 배치 툴<br><span class="fit-tag have">있음</span></td><td class="ddesc">작은 왕국에서 씬 구성을 자동화하는 에디터 스크립트와 프레임 베이커, 디버그 오버레이를 만들었습니다. 용사 때문에 레벨업에서는 밸런스 테스트 루프 씬과 테스트 패널을 PR로 병합했습니다.</td></tr><tr><td class="dname">코드 최적화(메모리 관리, 프로파일링)<br><span class="fit-tag part">일부</span></td><td class="ddesc">오브젝트 풀링으로 생성과 해제 비용을 줄이는 구조를 적용했습니다. Profiler로 측정해 개선한 기록은 아직 없습니다.</td></tr><tr><td class="dname">물리 기반 연출과 카메라 워크<br><span class="fit-tag part">일부</span></td><td class="ddesc">결정타 킬캠(Cinemachine Priority 스왑)과 상황별 카메라 전환을 구현했습니다. 래그돌 같은 물리 기반 코미디 연출은 해 본 적이 없습니다.</td></tr></tbody></table></div>
-      <h3 style="font-size:17px;margin:26px 0 0">이런 분을 찾고 있어요</h3>
-<div class="dtable-wrap"><table class="dtable"><thead><tr><th>공고 항목</th><th>제 경험</th></tr></thead><tbody><tr><td class="dname">스테이지(레벨) 구성과 인게임 연출<br><span class="fit-tag have">있음</span></td><td class="ddesc">라스트 글래디에이터에서 스테이지 6종의 적 구성을 EnemyStageData(ScriptableObject) 하나로 조합해 인스펙터에서 밸런싱했고, 결정타 킬캠을 Cinemachine으로 연출했습니다. 용사 때문에 레벨업에서는 스테이지 밸런스와 스폰 데이터 작업을 맡고 있습니다.</td></tr><tr><td class="dname">Component 기반 아키텍처, C#(OOP, 자료구조, 디자인 패턴)<br><span class="fit-tag have">있음</span></td><td class="ddesc">15개 상태 FSM과 인터럽트 스택(상태 패턴과 스택), ScriptableObject 데이터 분리, 싱글톤, 오브젝트 풀링, Dictionary 기반 O(1) 조회와 정확 매칭을 구현했습니다. 각각 왜 그 구조를 골랐는지 프로젝트 상세에 정리했습니다.</td></tr><tr><td class="dname">Unity 물리(Physics, Raycasting, 충돌 처리)<br><span class="fit-tag part">일부</span></td><td class="ddesc">라스트 글래디에이터에서 OverlapSphere 근접 판정, 히트박스 콜라이더 활성/비활성 제어, 패링 성공 시 넉백을 구현했고, 애니메이션 이벤트가 불안정해서 히트박스 타이밍을 코드로 바꾼 사례가 있습니다. Raycast를 중심으로 만든 작업은 아직 정리된 자료가 없습니다.</td></tr><tr><td class="dname">타 직군(기획, 아트)과의 기술적 소통<br><span class="fit-tag have">있음</span></td><td class="ddesc">두 팀 프로젝트에서 기획과 클라이언트를 겸임한 팀장이었고, 용사 때문에 레벨업 일정표에는 아트 공급과 적용을 나누고 에셋이 오기 전에는 네모 박스로 로직부터 짜는 규칙을 적어 두었습니다.</td></tr><tr><td class="dname">Git 코드 버전 관리와 협업<br><span class="fit-tag have">있음</span></td><td class="ddesc">GitHub PR 기반으로 협업했습니다(위치 크로니클 팀 PR 99건 중 21건, 용사 때문에 레벨업 38건 중 10건). Git LFS 문제로 새 조직 저장소로 옮기는 결정을 주도했고, 라스트 글래디에이터는 Plastic SCM을 썼습니다.</td></tr><tr><td class="dname">주도적으로 일하기<br><span class="fit-tag have">있음</span></td><td class="ddesc">4주 안에 끝나지 않는 기획을 스스로 판단해 범위를 줄였고, 적 AI 방식은 하루짜리 프로토타입으로 검증한 뒤 결정했습니다.</td></tr></tbody></table></div>
-      <p class="fit-note">프로파일러 분석, Raycast 중심 구현, 물리 기반 연출은 아직 경험이 부족한 부분이고, 계약 기간 안에 가장 먼저 채우고 싶은 항목입니다.</p>
-      <div class="hero-cta" style="margin-top:18px">
-        <button class="pill pill-solid" type="button" data-open="gladiator">라스트 글래디에이터 보기</button>
-        <button class="pill" type="button" data-open="mawang">용사 때문에 레벨업 보기</button>
-        <button class="pill" type="button" data-open="kingdom">작은 왕국 보기</button>
+      <div class="mini-grid">
+        <div class="mini" data-open="gladiator" style="cursor:pointer"><div class="icon-sq">01</div><b>스테이지를 데이터 한 파일로 조합</b><span>라스트 글래디에이터의 적 스탯, 행동 가능 여부, 페이즈, 스킬 슬롯을 EnemyStageData 하나에 담아 스테이지 6종을 인스펙터에서 조합하고 밸런싱했습니다.</span><span style="display:block;margin-top:8px;color:var(--primary);font-size:12.5px">자세히 보기 ▸</span></div>
+        <div class="mini" data-open="gladiator" style="cursor:pointer"><div class="icon-sq">02</div><b>0.2초 패링과 히트박스 타이밍</b><span>OverlapSphere로 근접 판정을 하고 콜라이더를 공격 상태에서만 켰습니다. 애니메이션 이벤트가 간헐적으로 빠지는 문제는 경공격 0.3초, 중공격 0.6초의 코드 타이밍으로 바꿔 해결했습니다.</span><span style="display:block;margin-top:8px;color:var(--primary);font-size:12.5px">자세히 보기 ▸</span></div>
+        <div class="mini" data-open="gladiator" style="cursor:pointer"><div class="icon-sq">03</div><b>결정타 킬캠 연출</b><span>마지막 일격에서 Cinemachine 카메라의 Priority를 바꿔 컷으로 넘어가는 연출을 만들었습니다.</span><span style="display:block;margin-top:8px;color:var(--primary);font-size:12.5px">자세히 보기 ▸</span></div>
+        <div class="mini" data-open="gladiator" style="cursor:pointer"><div class="icon-sq">04</div><b>상태가 서로 덮어쓰지 않는 구조</b><span>15개 상태 FSM 위에 피격과 경직을 인터럽트 스택으로 얹어, 죽은 적이 다시 살아나던 버그를 구조로 막았습니다.</span><span style="display:block;margin-top:8px;color:var(--primary);font-size:12.5px">자세히 보기 ▸</span></div>
+        <div class="mini" data-open="kingdom" style="cursor:pointer"><div class="icon-sq">05</div><b>씬을 만들고 검증하는 에디터 툴</b><span>작은 왕국의 씬 구성 자동화 스크립트, 프레임 베이커, 디버그 오버레이를 만들었고, 용사 때문에 레벨업에서는 밸런스 테스트 루프 씬과 테스트 패널을 PR로 병합했습니다.</span><span style="display:block;margin-top:8px;color:var(--primary);font-size:12.5px">자세히 보기 ▸</span></div>
+        <div class="mini" data-open="mawang" style="cursor:pointer"><div class="icon-sq">06</div><b>스테이지 밸런스를 반복해서 맞추기</b><span>용사 때문에 레벨업의 스테이지 스폰 데이터와 밸런스를 맡아, 실제로 돌려 보며 수치를 고치는 반복 작업을 하고 있습니다.</span><span style="display:block;margin-top:8px;color:var(--primary);font-size:12.5px">자세히 보기 ▸</span></div>
       </div>
     </section>
 
